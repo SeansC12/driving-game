@@ -39,7 +39,7 @@ export function Scene() {
         files={
           process.env.PUBLIC_URL + "/textures/envmap.hdr"
         }
-        background={"both"}
+        // background={"both"}
       />
 
       <PerspectiveCamera

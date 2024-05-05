@@ -33,7 +33,7 @@ export function Track() {
 
       <Ramp />
 
-      <ColliderBox
+      {/* <ColliderBox
         position={[1.75, 0, 0.5]}
         scale={[0.3, 1, 0.3]}
       />
@@ -141,7 +141,7 @@ export function Track() {
       <ColliderBox
         position={[-0.3, 0, 1]}
         scale={[0.1, 0.5, 0.1]}
-      />
+      /> */}
     </>
   );
 }
