@@ -8,7 +8,7 @@ import { Ramp } from "./Ramp";
 export function Track() {
   const result = useLoader(
     GLTFLoader,
-    process.env.PUBLIC_URL + "/models/ground.glb"
+    process.env.PUBLIC_URL + "/models/track.glb"
   );
 
   const colorMap = useLoader(
