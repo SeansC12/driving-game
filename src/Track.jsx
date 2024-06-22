@@ -8,7 +8,7 @@ import { Ramp } from "./Ramp";
 export function Track() {
   const result = useLoader(
     GLTFLoader,
-    process.env.PUBLIC_URL + "/models/track.glb"
+    process.env.PUBLIC_URL + "/models/racetracktest.glb"
   );
 
   const colorMap = useLoader(
@@ -31,7 +31,7 @@ export function Track() {
         />
       </mesh>
 
-      <Ramp />
+      {/* <Ramp /> */}
 
       {/* <ColliderBox
         position={[1.75, 0, 0.5]}

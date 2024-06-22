@@ -19,16 +19,18 @@ export function Car({ thirdPerson }) {
     // "/models/F82.glb"
   ).scene;
 
-  const position = [-1.5, 0.5, 3];
+  let carPosition = {};
+
+  // const position = [-1.5, 0.5, 3];
+  // const width = 0.15;
+  // const height = 0.07;
+  // const front = 0.15;
+  // const wheelRadius = 0.05;
+  const position = [0, 0.5, 3];
   const width = 0.15;
   const height = 0.07;
   const front = 0.15;
   const wheelRadius = 0.05;
-  // const position = [0, 0, 0];
-  // const width = 0.5;
-  // const height = 0.3;
-  // const front = 0.15;
-  // const wheelRadius = 0.05;
 
   const chassisBodyArgs = [width, height, front * 2];
   const [chassisBody, chassisApi] = useBox(
@@ -84,6 +86,11 @@ export function Car({ thirdPerson }) {
           .multiplyScalar(1)
           .add(new Vector3(0, 0.3, 0))
       );
+
+    carPosition = cameraPosition;
+    // x: left/write
+    // y: up/down
+    // z: forward/backward
 
     wDir.add(new Vector3(0, 0.2, 0));
     state.camera.position.copy(cameraPosition);
